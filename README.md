@@ -74,9 +74,9 @@
 
 Графики (heatmap) можно найти по пути plots/grid_search/
 Выводы, которые можно сделать по ним:
- - При постоянном количестве лучший результат как на mnist, так и на cifar10 получается при (512, 512, 512)
+ - При постоянном количестве весов лучший результат как на mnist, так и на cifar10 получается при (512, 512, 512)
 
-![3dscatter_cifar10_expanding_annotated.png](plots%2Fgrid_search%2F3dscatter_cifar10_expanding_annotated.png)
+![3dscatter_mnist_constant_annotated.png](plots%2Fgrid_search%2F3dscatter_mnist_constant_annotated.png)
 
  - При сужении слоёв лучший результат на обоих датасетах получается при наибольших количествах весов (1024, 512, 256)
 
