@@ -106,6 +106,23 @@
  - Dropout + BatchNorm
  - L2 регуляризация (weight decay)
 
+| variant     | dataset | final_test_acc | stability_std | train time (s) |
+|-------------|---------|----------------|---------------|----------------|
+| no_reg      | mnist   | 0.9722         | 0.0137        | 125.54         |
+| no_reg      | cifar10 | 0.5396         | 0.0262        | 139.62         |
+| dropout_0.1 | mnist   | 0.9806         | 0.0149        | 126.21         |
+| dropout_0.1 | cifar10 | 0.5415         | 0.0321        | 141.02         |
+| dropout_0.3 | mnist   | 0.9802         | 0.0132        | 126.14         |
+| dropout_0.3 | cifar10 | 0.5257         | 0.0341        | 140.46         |
+| dropout_0.5 | mnist   | 0.9742         | 0.0145        | 126.98         |
+| dropout_0.5 | cifar10 | 0.4805         | 0.0305        | 141.90         |
+| batchnorm   | mnist   | 0.9820         | 0.0042        | 135.73         |
+| batchnorm   | cifar10 | 0.5484         | 0.0254        | 145.09         |
+| drop_bn     | mnist   | 0.9771         | 0.0148        | 131.65         |
+| drop_bn     | cifar10 | 0.5004         | 0.0418        | 145.11         |
+| l2_wd       | mnist   | 0.9771         | 0.0142        | 127.41         |
+| l2_wd       | cifar10 | 0.5315         | 0.0230        | 149.28         |
+
 Топ точности на cifar10 (accuracy):
 1. Только BatchNorm (0.5484)
 2. Только Dropout(0.1) (0.5415)
